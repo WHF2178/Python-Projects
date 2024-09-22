@@ -1,0 +1,16 @@
+import shutil
+import os
+
+base_destination_dir = r"E:\\"
+
+os.makedirs(base_destination_dir, exist_ok=True)
+
+for i in range(1,31):
+    
+    folder_path = os.path.join(base_destination_dir, f"week{i+1}")
+    
+    os.makedirs(folder_path, exist_ok=True)
+    
+
+print("Files copied successfully.")
+  
